@@ -757,6 +757,7 @@ document.addEventListener('DOMContentLoaded', function () {
               document.getElementById('map-wrong').textContent = msgs[Math.min(mapWrongCount-1, msgs.length-1)];
               d3.select(this).attr('fill','#c0392b');
               setTimeout(() => d3.select(this).attr('fill','#1e4d6b'), 700);
+              loseLife();
             }
           });
 
